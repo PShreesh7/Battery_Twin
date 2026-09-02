@@ -44,10 +44,13 @@ def create_telemetry_chart(df: pd.DataFrame, cell_id: str) -> go.Figure:
     fig.update_layout(
         title=f"Multi-Signal Operating Telemetry - {cell_id}",
         xaxis_title="Cycle Number",
-        yaxis=dict(title="Voltage (V)", titlefont=dict(color="#2ca02c")),
+        yaxis=dict(
+            title=dict(text="Voltage (V)", font=dict(color="#2ca02c")),
+            tickfont=dict(color="#2ca02c")
+        ),
         yaxis2=dict(
-            title="Temperature (?C)",
-            titlefont=dict(color="#d62728"),
+            title=dict(text="Temperature (?C)", font=dict(color="#d62728")),
+            tickfont=dict(color="#d62728"),
             overlaying="y",
             side="right"
         ),

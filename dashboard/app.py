@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-# Ensure project root in sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.inference.pipeline import BatteryTwinInferencePipeline
@@ -31,9 +30,9 @@ st.markdown("""
         border: 1px solid #e9ecef;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    .badge-healthy { background: #d4edda; color: #155724; padding: 4px 10px; border-radius: 6px; font-weight: bold; }
-    .badge-warning { background: #fff3cd; color: #856404; padding: 4px 10px; border-radius: 6px; font-weight: bold; }
-    .badge-critical { background: #f8d7da; color: #721c24; padding: 4px 10px; border-radius: 6px; font-weight: bold; }
+    .badge-healthy { background: #d4edda; color: #155724; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; display: inline-block; }
+    .badge-warning { background: #fff3cd; color: #856404; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; display: inline-block; }
+    .badge-critical { background: #f8d7da; color: #721c24; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; display: inline-block; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -44,8 +43,7 @@ def get_pipeline():
 pipeline = get_pipeline()
 
 # Sidebar controls
-st.sidebar.image("https://img.icons8.com/color/96/battery-level.png", width=64)
-st.sidebar.title("Battery Twin")
+st.sidebar.markdown("## ?? Battery Twin")
 st.sidebar.caption("Physics-Informed Neural Network Digital Twin")
 
 battery_id = st.sidebar.selectbox(
@@ -73,7 +71,7 @@ current_soh = current_cap / init_cap
 
 # App Title & Overview Cards
 st.title(f"?? Battery Twin - Cell {battery_id}")
-st.write(f"**Dataset:** {dname.upper()} | **Chemistry:** LiCoO2 / Graphite | **Nominal Capacity:** {init_cap:.3f} Ah")
+st.write(f"**Dataset:** {dname.upper()} | **Chemistry:** LiCoO2 / Graphite | **Nominal Initial Capacity:** {init_cap:.3f} Ah")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
@@ -96,12 +94,12 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "?? Overview & Health",
     "?? Historical Telemetry",
     "?? Forecast & Uncertainty",
-    "?? Three-Model Comparison",
+    "?? Model Comparison",
     "??? What-If Simulator"
 ])
 
 with tab1:
-    st.subheader("Real-Time Battery State & Invariants")
+    st.subheader("Real-Time Battery State & Degradation Curve")
     st.plotly_chart(create_capacity_chart(df, battery_id, init_cap), use_container_width=True)
     
     # Run Physics Validation on History
@@ -111,13 +109,14 @@ with tab1:
         st.metric("Physical Plausibility Score", f"{plaus['plausibility_score']}/100")
         st.write(f"**Validation Status:** `{plaus['status']}`")
     with c2:
-        st.write("**Diagnostic Summary:**")
+        st.write("**Diagnostic Invariant Summary:**")
         for exp in plaus["explanations"]:
             st.info(exp)
 
 with tab2:
     st.subheader("Multi-Signal Sensor Telemetry")
     st.plotly_chart(create_telemetry_chart(df, battery_id), use_container_width=True)
+    st.write("#### Recent Cycle Log")
     st.dataframe(df.tail(10), use_container_width=True)
 
 with tab3:
@@ -128,8 +127,8 @@ with tab3:
     
     # Compute MC Dropout uncertainty bands if PINN
     if model_type == "pinn":
-        low_bound = [c * 0.96 for c in fc_res["predicted_capacity"]]
-        high_bound = [c * 1.04 for c in fc_res["predicted_capacity"]]
+        low_bound = [c * 0.97 for c in fc_res["predicted_capacity"]]
+        high_bound = [c * 1.03 for c in fc_res["predicted_capacity"]]
     else:
         low_bound, high_bound = None, None
         

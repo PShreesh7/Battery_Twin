@@ -109,14 +109,19 @@ class BatteryTwinInferencePipeline:
             return float(phys.predict(np.array([c]))[0])
             
         scaler = self.load_scaler(dname, cell_id)
+        
         if feature_sequence is None:
-            seq_arr = np.zeros((5, len(FeatureExtractor.DEFAULT_FEATURE_COLS)))
-            seq_arr[:, 0] = cycle or 100
+            csv_path = self.data_dir / f"{dname}/{cell_id}.csv"
+            df = pd.read_csv(csv_path)
+            df_feat = self.extractor.extract_features(df)
+            c = cycle if cycle is not None else 100
+            idx = min(len(df_feat) - 1, max(5, int(c)))
+            curr_seq = scaler.transform(df_feat.iloc[idx - 5 : idx])[FeatureExtractor.DEFAULT_FEATURE_COLS].values
+            seq_tensor = torch.tensor(curr_seq, dtype=torch.float32).unsqueeze(0)
         else:
             seq_arr = np.array(feature_sequence)
+            seq_tensor = torch.tensor(seq_arr, dtype=torch.float32).unsqueeze(0)
             
-        seq_tensor = torch.tensor(seq_arr, dtype=torch.float32).unsqueeze(0)
-        
         if model_type == "ai":
             model = self.load_ai_model(dname, cell_id)
         else:

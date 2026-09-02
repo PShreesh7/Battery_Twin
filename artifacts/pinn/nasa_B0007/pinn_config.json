@@ -1,0 +1,19 @@
+{
+  "equation_name": "exponential",
+  "physics_params": {
+    "q0": 1.88209932168526,
+    "alpha": 0.004955782133956351,
+    "beta": 1.1072024410566845
+  },
+  "lambda_physics": 0.05,
+  "gamma_monotonicity": 0.5,
+  "feature_cols": [
+    "cycle",
+    "voltage_mean",
+    "current_mean",
+    "temp_mean",
+    "temp_max",
+    "capacity_prev"
+  ],
+  "seq_length": 5
+}

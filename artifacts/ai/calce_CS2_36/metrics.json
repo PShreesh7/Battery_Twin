@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_CALCE_CS2_36_AI",
+  "metadata": {
+    "best_val_loss": 0.00016334969465484997
+  },
+  "final_metrics": {
+    "epoch": 45,
+    "train_loss": 0.001917831148020923,
+    "train_data_loss": 0.001917831148020923,
+    "train_phys_loss": 0.0,
+    "val_loss": 0.0003018378433807811,
+    "val_data_loss": 0.0003018378433807811,
+    "val_phys_loss": 0.0,
+    "lr": 0.00025
+  }
+}

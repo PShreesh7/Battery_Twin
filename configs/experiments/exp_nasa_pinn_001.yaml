@@ -1,0 +1,11 @@
+experiment_id: EXP_NASA_PINN_001
+dataset: nasa
+cell: B0005
+model_type: pinn
+physics_equation: power_law
+lambda_physics: 0.05
+sequence_length: 5
+epochs: 150
+learning_rate: 0.001
+batch_size: 16
+seed: 42

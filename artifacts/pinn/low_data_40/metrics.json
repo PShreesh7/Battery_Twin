@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_LOWDATA_PINN_40",
+  "metadata": {
+    "best_val_loss": 0.01899088608721892
+  },
+  "final_metrics": {
+    "epoch": 32,
+    "train_loss": 0.01672601168975234,
+    "train_data_loss": 0.015072157979011536,
+    "train_phys_loss": 0.03307708464562893,
+    "val_loss": 0.08839620153109233,
+    "val_data_loss": 0.08824988454580307,
+    "val_phys_loss": 0.0029263333417475224,
+    "lr": 0.00025
+  }
+}

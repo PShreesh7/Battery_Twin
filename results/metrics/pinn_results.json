@@ -1,0 +1,106 @@
+[
+  {
+    "dataset": "nasa",
+    "cell_id": "B0005",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.09646940481985002,
+      "mae": 0.09171594679355621,
+      "mape": 6.713105201721191,
+      "r2": -9.298002243041992
+    }
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0006",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.1652477908268133,
+      "mae": 0.15722331404685974,
+      "mape": 12.858735084533691,
+      "r2": -11.591729164123535
+    }
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0007",
+    "model_type": "hybrid_pinn",
+    "equation": "exponential",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.11392753500318578,
+      "mae": 0.1083621010184288,
+      "mape": 7.486898422241211,
+      "r2": -14.16849136352539
+    }
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0018",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.0794373936162832,
+      "mae": 0.07400327175855637,
+      "mape": 5.360230445861816,
+      "r2": -6.476969242095947
+    }
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CS2_35",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.15281196316232756,
+      "mae": 0.1413992941379547,
+      "mape": 24.826250076293945,
+      "r2": -2.2792890071868896
+    }
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CS2_36",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.18816037908349748,
+      "mae": 0.17263588309288025,
+      "mape": 33.0124397277832,
+      "r2": -3.693176746368408
+    }
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CS2_37",
+    "model_type": "hybrid_pinn",
+    "equation": "power_law",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.20954280292313915,
+      "mae": 0.1935635507106781,
+      "mape": 34.19007873535156,
+      "r2": -5.563693523406982
+    }
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CS2_38",
+    "model_type": "hybrid_pinn",
+    "equation": "exponential",
+    "lambda_physics": 0.05,
+    "test_metrics": {
+      "rmse": 0.23114973420514226,
+      "mae": 0.20237931609153748,
+      "mape": 35.568946838378906,
+      "r2": -4.257198333740234
+    }
+  }
+]

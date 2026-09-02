@@ -1,0 +1,10 @@
+Horizon,Horizon_Steps,Model,RMSE,MAE,MAPE (%),R2
+Short (10 cycles),10,Physics-Only,0.0078,0.0063,0.42,0.3365
+Short (10 cycles),10,AI-Only (LSTM),0.0438,0.0385,2.59,-19.697
+Short (10 cycles),10,Hybrid PINN,0.018,0.0163,1.09,-2.5
+Medium (30 cycles),30,Physics-Only,0.0061,0.0049,0.33,0.9352
+Medium (30 cycles),30,AI-Only (LSTM),0.0773,0.0716,4.92,-9.4599
+Medium (30 cycles),30,Hybrid PINN,0.0235,0.0222,1.52,0.0363
+Long (50 cycles),50,Physics-Only,0.006,0.0046,0.32,0.9759
+Long (50 cycles),50,AI-Only (LSTM),0.1024,0.0953,6.7,-6.1404
+Long (50 cycles),50,Hybrid PINN,0.0259,0.0248,1.74,0.5418

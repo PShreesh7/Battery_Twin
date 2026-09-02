@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_NASA_B0018_PINN",
+  "metadata": {
+    "best_val_loss": 0.0060735298320651054
+  },
+  "final_metrics": {
+    "epoch": 76,
+    "train_loss": 0.01093945223838091,
+    "train_data_loss": 0.00806754007935524,
+    "train_phys_loss": 0.05743824169039726,
+    "val_loss": 0.006084023974835873,
+    "val_data_loss": 0.00041918683564290404,
+    "val_phys_loss": 0.113296739757061,
+    "lr": 0.000125
+  }
+}

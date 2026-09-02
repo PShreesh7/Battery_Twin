@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_LOWDATA_AI_40",
+  "metadata": {
+    "best_val_loss": 0.04989241932829221
+  },
+  "final_metrics": {
+    "epoch": 33,
+    "train_loss": 0.021564476191997528,
+    "train_data_loss": 0.021564476191997528,
+    "train_phys_loss": 0.0,
+    "val_loss": 0.10708701362212499,
+    "val_data_loss": 0.10708701362212499,
+    "val_phys_loss": 0.0,
+    "lr": 0.00025
+  }
+}

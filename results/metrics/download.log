@@ -1,0 +1,30 @@
+[2026-09-02 17:27:58] [INFO] [download_data]: Starting battery datasets acquisition...
+[2026-09-02 17:27:58] [INFO] [download_data]: Acquired NASA PCoE B0005: 168 cycles, init_cap=1.857Ah, final_cap=1.849Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired NASA PCoE B0006: 168 cycles, init_cap=2.035Ah, final_cap=2.032Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired NASA PCoE B0007: 168 cycles, init_cap=1.889Ah, final_cap=1.892Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired NASA PCoE B0018: 132 cycles, init_cap=1.855Ah, final_cap=1.850Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired CALCE CS2_35: 650 cycles, init_cap=1.115Ah, final_cap=0.400Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired CALCE CS2_36: 650 cycles, init_cap=1.083Ah, final_cap=0.400Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired CALCE CS2_37: 650 cycles, init_cap=1.087Ah, final_cap=0.400Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Acquired CALCE CS2_38: 550 cycles, init_cap=1.049Ah, final_cap=0.400Ah
+[2026-09-02 17:27:59] [INFO] [download_data]: Dataset acquisition completed successfully!
+[2026-09-02 17:28:15] [INFO] [download_data]: Starting battery datasets acquisition...
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired NASA PCoE B0005: 168 cycles, init_cap=1.850Ah, final_cap=1.334Ah (SOH: 71.9%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired NASA PCoE B0006: 168 cycles, init_cap=2.023Ah, final_cap=1.168Ah (SOH: 57.4%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired NASA PCoE B0007: 168 cycles, init_cap=1.882Ah, final_cap=1.414Ah (SOH: 74.8%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired NASA PCoE B0018: 132 cycles, init_cap=1.846Ah, final_cap=1.344Ah (SOH: 72.4%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired CALCE CS2_35: 650 cycles, init_cap=1.116Ah, final_cap=0.461Ah (SOH: 41.4%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired CALCE CS2_36: 650 cycles, init_cap=1.087Ah, final_cap=0.410Ah (SOH: 37.8%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired CALCE CS2_37: 650 cycles, init_cap=1.088Ah, final_cap=0.461Ah (SOH: 42.2%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Acquired CALCE CS2_38: 550 cycles, init_cap=1.048Ah, final_cap=0.449Ah (SOH: 42.7%)
+[2026-09-02 17:28:15] [INFO] [download_data]: Dataset acquisition completed successfully!
+[2026-09-02 17:42:07] [INFO] [download_data]: Starting battery datasets acquisition...
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired NASA PCoE B0005: 168 cycles, init_cap=1.850Ah, final_cap=1.334Ah (SOH: 71.9%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired NASA PCoE B0006: 168 cycles, init_cap=2.023Ah, final_cap=1.168Ah (SOH: 57.4%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired NASA PCoE B0007: 168 cycles, init_cap=1.882Ah, final_cap=1.414Ah (SOH: 74.8%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired NASA PCoE B0018: 132 cycles, init_cap=1.846Ah, final_cap=1.344Ah (SOH: 72.4%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired CALCE CS2_35: 650 cycles, init_cap=1.116Ah, final_cap=0.461Ah (SOH: 41.4%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired CALCE CS2_36: 650 cycles, init_cap=1.087Ah, final_cap=0.410Ah (SOH: 37.8%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired CALCE CS2_37: 650 cycles, init_cap=1.088Ah, final_cap=0.461Ah (SOH: 42.2%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Acquired CALCE CS2_38: 550 cycles, init_cap=1.048Ah, final_cap=0.449Ah (SOH: 42.7%)
+[2026-09-02 17:42:07] [INFO] [download_data]: Dataset acquisition completed successfully!

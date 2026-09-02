@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_CALCE_CS2_36_PINN",
+  "metadata": {
+    "best_val_loss": 0.004773940464171271
+  },
+  "final_metrics": {
+    "epoch": 65,
+    "train_loss": 0.0019970528641715646,
+    "train_data_loss": 0.0007327688892837614,
+    "train_phys_loss": 0.025285678878426553,
+    "val_loss": 0.006138882366940379,
+    "val_data_loss": 0.002869060447361941,
+    "val_phys_loss": 0.0653964343170325,
+    "lr": 0.00025
+  }
+}

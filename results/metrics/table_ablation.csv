@@ -1,0 +1,7 @@
+Lambda_Physics,Model_Description,RMSE,MAE,MAPE (%),R2,Plausibility Score,Monotonicity Violations
+0.0,Pure AI (No Physics),0.071,0.0657,4.82,-4.5788,100.0,0
+0.001,PINN (lambda=0.001),0.0762,0.0704,5.16,-5.4254,78.9,4
+0.01,PINN (lambda=0.01),0.2059,0.1975,14.45,-45.91,47.4,10
+0.05,PINN (lambda=0.05),0.0903,0.0865,6.33,-8.0329,57.9,8
+0.1,PINN (lambda=0.1),0.1219,0.1171,8.56,-15.4517,94.7,1
+1.0,PINN (lambda=1.0),0.2811,0.279,20.34,-86.4564,84.2,3

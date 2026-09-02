@@ -1,0 +1,22 @@
+# CALCE CS2 Dataset Configuration
+dataset_name: calce_cs2
+chemistry: LiCoO2_Graphite
+nominal_capacity: 1.1
+cells:
+  train_cells: ["CS2_35", "CS2_36"]
+  val_cells: ["CS2_37"]
+  test_cells: ["CS2_38"]
+features:
+  - cycle
+  - voltage_mean
+  - current_mean
+  - temp_mean
+  - temp_max
+  - capacity_prev
+target: capacity
+eol_threshold_soh: 0.80
+
+physics:
+  equation: exponential
+  lambda_physics: 0.05
+  gamma_monotonicity: 0.5

@@ -1,0 +1,3 @@
+Nominal Confidence,PICP Empirical Coverage (%),MPIW Width (Ah),Coverage Error (%),Well Calibrated
+90%,74.36,0.2336,-15.64,False
+95%,92.31,0.2765,-2.69,True

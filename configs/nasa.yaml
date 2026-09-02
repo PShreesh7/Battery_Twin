@@ -1,0 +1,22 @@
+# NASA PCoE Dataset Configuration
+dataset_name: nasa_pcoe
+chemistry: LiCoO2_Graphite
+nominal_capacity: 2.0
+cells:
+  train_cells: ["B0005", "B0006"]
+  val_cells: ["B0007"]
+  test_cells: ["B0018"]
+features:
+  - cycle
+  - voltage_mean
+  - current_mean
+  - temp_mean
+  - temp_max
+  - capacity_prev
+target: capacity
+eol_threshold_soh: 0.80
+
+physics:
+  equation: power_law
+  lambda_physics: 0.05
+  gamma_monotonicity: 0.5

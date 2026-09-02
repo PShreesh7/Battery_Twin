@@ -1,0 +1,11 @@
+experiment_id: EXP_CALCE_PINN_001
+dataset: calce
+cell: CS2_35
+model_type: pinn
+physics_equation: exponential
+lambda_physics: 0.05
+sequence_length: 5
+epochs: 150
+learning_rate: 0.001
+batch_size: 16
+seed: 42

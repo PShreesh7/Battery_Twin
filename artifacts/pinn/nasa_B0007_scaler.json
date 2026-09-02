@@ -1,0 +1,27 @@
+{
+  "feature_cols": [
+    "cycle",
+    "voltage_mean",
+    "current_mean",
+    "temp_mean",
+    "temp_max",
+    "capacity_prev"
+  ],
+  "means": {
+    "cycle": 50.5,
+    "voltage_mean": 3.475223999999999,
+    "current_mean": -1.9808200000000002,
+    "temp_mean": 25.765154,
+    "temp_max": 37.470735000000005,
+    "capacity_prev": 1.719772
+  },
+  "stds": {
+    "cycle": 29.011491975882016,
+    "voltage_mean": 0.027098608261255215,
+    "current_mean": 0.010517671517090365,
+    "temp_mean": 0.7259712462542017,
+    "temp_max": 0.9329242343001088,
+    "capacity_prev": 0.0879976182873288
+  },
+  "is_fitted": true
+}

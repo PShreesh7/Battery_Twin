@@ -1,0 +1,45 @@
+# Base Global Configuration for Battery Twin
+seed: 42
+device: auto  # auto, cuda, or cpu
+log_level: INFO
+
+data:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  sequence_length: 5
+  train_split: 0.60
+  val_split: 0.15
+  test_split: 0.25
+
+model:
+  lstm:
+    input_size: 6
+    hidden_size: 64
+    num_layers: 2
+    dropout: 0.2
+    bidirectional: false
+
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  epochs: 150
+  early_stopping_patience: 25
+  lr_scheduler_factor: 0.5
+  lr_scheduler_patience: 10
+  gradient_clip_val: 1.0
+
+physics:
+  equation: power_law  # power_law, exponential, logistic
+  lambda_physics: 0.05
+  gamma_monotonicity: 0.5
+
+uncertainty:
+  method: mc_dropout
+  mc_samples: 100
+  confidence_level: 0.90
+
+paths:
+  artifacts_dir: artifacts
+  results_dir: results

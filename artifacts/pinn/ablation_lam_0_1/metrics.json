@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP_ABLATION_LAM_0_1",
+  "metadata": {
+    "best_val_loss": 0.013560749590396881
+  },
+  "final_metrics": {
+    "epoch": 71,
+    "train_loss": 0.013851205973575512,
+    "train_data_loss": 0.008102554362267256,
+    "train_phys_loss": 0.05748651300867399,
+    "val_loss": 0.014202228747308254,
+    "val_data_loss": 0.0036907242611050606,
+    "val_phys_loss": 0.10511504486203194,
+    "lr": 0.000125
+  }
+}

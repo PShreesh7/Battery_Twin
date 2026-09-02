@@ -1,0 +1,19 @@
+{
+  "equation_name": "power_law",
+  "physics_params": {
+    "q0": 1.0842261553532901,
+    "alpha": 0.0011577454743433187,
+    "beta": 0.9082588689171417
+  },
+  "lambda_physics": 0.05,
+  "gamma_monotonicity": 0.5,
+  "feature_cols": [
+    "cycle",
+    "voltage_mean",
+    "current_mean",
+    "temp_mean",
+    "temp_max",
+    "capacity_prev"
+  ],
+  "seq_length": 5
+}

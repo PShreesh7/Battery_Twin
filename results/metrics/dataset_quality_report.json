@@ -1,0 +1,40 @@
+{
+  "validation_timestamp": "2026-09-02T17:42:08.488920",
+  "overall_status": "PASS",
+  "datasets": {
+    "nasa_pcoe": {
+      "dataset_name": "NASA_PCoE",
+      "total_records": 636,
+      "cells": [
+        "B0005",
+        "B0006",
+        "B0007",
+        "B0018"
+      ],
+      "missing_columns": [],
+      "nan_counts": {},
+      "infinite_counts": {},
+      "duplicate_cycles": 0,
+      "broken_cycles": 0,
+      "out_of_bounds_violations": {},
+      "status": "PASS"
+    },
+    "calce_cs2": {
+      "dataset_name": "CALCE_CS2",
+      "total_records": 2500,
+      "cells": [
+        "CS2_35",
+        "CS2_36",
+        "CS2_37",
+        "CS2_38"
+      ],
+      "missing_columns": [],
+      "nan_counts": {},
+      "infinite_counts": {},
+      "duplicate_cycles": 0,
+      "broken_cycles": 0,
+      "out_of_bounds_violations": {},
+      "status": "PASS"
+    }
+  }
+}

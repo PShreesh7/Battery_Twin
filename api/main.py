@@ -39,6 +39,19 @@ app.add_middleware(
 
 pipeline = BatteryTwinInferencePipeline()
 
+@app.get("/", tags=["System"])
+def root():
+    return {
+        "message": "Welcome to the Battery Twin REST API",
+        "status": "online",
+        "version": "0.1.0",
+        "documentation": "/docs",
+        "openapi_schema": "/openapi.json",
+        "health_check": "/health",
+        "models_endpoint": "/models",
+        "dashboard_url": "http://localhost:8501"
+    }
+
 @app.get("/health", response_model=HealthResponse, tags=["System"])
 def health_check():
     return HealthResponse()

@@ -6,7 +6,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-teal.svg)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red.svg)](https://streamlit.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](LICENSE)
 
 ---
 
@@ -170,4 +170,4 @@ pytest -v
 ---
 
 ## ?? 10. License & Citations
-This project is open-source under the [MIT License](LICENSE).
+Copyright (c) 2026 PShreesh7. All Rights Reserved. Unauthorized copying, modification, or commercial exploitation is strictly prohibited under the [Proprietary License](LICENSE).

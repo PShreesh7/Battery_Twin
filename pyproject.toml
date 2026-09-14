@@ -6,7 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "battery-twin"
 version = "0.1.0"
 description = "Physics-Informed Neural Network based Lithium-Ion Battery Health and Degradation Prediction Digital Twin"
-authors = [{name = "Battery Twin Research Team"}]
+authors = [{name = "PShreesh7"}]
+license = {text = "Proprietary - All Rights Reserved"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

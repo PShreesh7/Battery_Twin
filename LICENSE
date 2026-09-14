@@ -1,21 +1,21 @@
-MIT License
+PROPRIETARY SOURCE CODE & INTELLECTUAL PROPERTY LICENSE
 
-Copyright (c) 2026 Battery Twin Research Team
+Copyright (c) 2026 PShreesh7. All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+CONFIDENTIAL AND PROPRIETARY RESEARCH PROPERTY.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. RESERVATION OF RIGHTS
+All intellectual property, proprietary architectures, Physics-Informed Neural Network (PINN) loss formulations, degradation models, digital twin inference pipelines, source code, data preprocessing algorithms, and associated documentation contained within this repository are the exclusive property of the author (PShreesh7).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. RESTRICTIONS
+No individual, organization, academic institution, or commercial entity is permitted to:
+   a. Copy, duplicate, reproduce, distribute, publish, or sublicense any part of this software or methodology in any form.
+   b. Modify, adapt, translate, reverse engineer, decompile, or create derivative works based upon this software or its underlying mathematical/physics-informed formulations.
+   c. Use this software, codebase, or architecture for any commercial, enterprise, or competitive benchmarking purposes without prior explicit written authorization from the copyright holder.
+   d. Ingest, train, fine-tune, or benchmark external machine learning, deep learning, or artificial intelligence models on the contents of this repository without express written consent.
+
+3. ACADEMIC CITATION ONLY
+Viewing this repository is permitted solely for individual reference and verification. Any academic reference or quotation of research findings derived from this work must provide explicit credit and formal citation to the author (PShreesh7) and this repository.
+
+4. NO WARRANTY
+THIS SOFTWARE AND ASSOCIATED RESEARCH ARTIFACTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE.

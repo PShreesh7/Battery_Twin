@@ -37,7 +37,7 @@ def create_telemetry_chart(df: pd.DataFrame, cell_id: str) -> go.Figure:
     ))
     fig.add_trace(go.Scatter(
         x=df["cycle"], y=df["temp_mean"],
-        mode="lines", name="Mean Temperature (?C)",
+        mode="lines", name="Mean Temperature (deg C)",
         line=dict(color="#d62728", width=2),
         yaxis="y2"
     ))
@@ -49,7 +49,7 @@ def create_telemetry_chart(df: pd.DataFrame, cell_id: str) -> go.Figure:
             tickfont=dict(color="#2ca02c")
         ),
         yaxis2=dict(
-            title=dict(text="Temperature (?C)", font=dict(color="#d62728")),
+            title=dict(text="Temperature (deg C)", font=dict(color="#d62728")),
             tickfont=dict(color="#d62728"),
             overlaying="y",
             side="right"

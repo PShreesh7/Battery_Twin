@@ -15,7 +15,7 @@ from dashboard.components.charts import (
 
 st.set_page_config(
     page_title="Battery Twin | PINN Digital Twin",
-    page_icon="??",
+    page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -43,7 +43,7 @@ def get_pipeline():
 pipeline = get_pipeline()
 
 # Sidebar controls
-st.sidebar.markdown("## ?? Battery Twin")
+st.sidebar.markdown("## ⚡ Battery Twin")
 st.sidebar.caption("Physics-Informed Neural Network Digital Twin")
 
 battery_id = st.sidebar.selectbox(
@@ -70,7 +70,7 @@ current_cap = float(df["capacity"].iloc[-1])
 current_soh = current_cap / init_cap
 
 # App Title & Overview Cards
-st.title(f"?? Battery Twin - Cell {battery_id}")
+st.title(f"Battery Twin — Cell {battery_id}")
 st.write(f"**Dataset:** {dname.upper()} | **Chemistry:** LiCoO2 / Graphite | **Nominal Initial Capacity:** {init_cap:.3f} Ah")
 
 col1, col2, col3, col4 = st.columns(4)
@@ -91,11 +91,11 @@ with col4:
 
 # Tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "?? Overview & Health",
-    "?? Historical Telemetry",
-    "?? Forecast & Uncertainty",
-    "?? Model Comparison",
-    "??? What-If Simulator"
+    "Overview & Health",
+    "Historical Telemetry",
+    "Forecast & Uncertainty",
+    "Model Comparison",
+    "What-If Simulator"
 ])
 
 with tab1:

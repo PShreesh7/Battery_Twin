@@ -1,4 +1,4 @@
-# ?? Battery Twin: Physics-Informed Neural Network Digital Twin
+#  Battery Twin: Physics-Informed Neural Network Digital Twin
 
 > **Physics-Informed Neural Network based Lithium-Ion Battery Health and Degradation Prediction Digital Twin**
 
@@ -10,7 +10,7 @@
 
 ---
 
-## ?? 1. Overview & Research Scope
+##  1. Overview & Research Scope
 
 Lithium-Ion batteries undergo capacity fading and impedance rise under repeated charge-discharge cycles due to Solid Electrolyte Interphase (SEI) growth and active material degradation. 
 
@@ -22,7 +22,7 @@ Lithium-Ion batteries undergo capacity fading and impedance rise under repeated 
 
 ---
 
-## ?? 2. Benchmark Datasets
+##  2. Benchmark Datasets
 
 | Dataset | Battery Cell IDs | Chemistry | Nominal Capacity | Primary Operating Conditions |
 |---|---|---|---|---|
@@ -31,7 +31,7 @@ Lithium-Ion batteries undergo capacity fading and impedance rise under repeated 
 
 ---
 
-## ??? 3. Architecture & Project Layout
+##  3. Architecture & Project Layout
 
 ```text
 Battery_Twin/
@@ -63,7 +63,7 @@ Battery_Twin/
 
 ---
 
-## ? 4. Quick Start & Installation
+##  4. Quick Start & Installation
 
 ### Step 1: Clone and Set Up Virtual Environment
 ```bash
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 
 ---
 
-## ?? 5. One-Command Full Pipeline Execution
+##  5. One-Command Full Pipeline Execution
 
 Run the complete pipeline from scratch (Data Ingestion $\to$ Preprocessing $\to$ Physics/AI/PINN Training $\to$ Benchmark Evaluation $\to$ Forecasting $\to$ Low-Data $\to$ Ablation $\to$ Uncertainty):
 
@@ -108,7 +108,7 @@ python scripts/run_all_experiments.py
 
 ---
 
-## ?? 6. Key Benchmark Findings
+##  6. Key Benchmark Findings
 
 ### 6.1 Long-Horizon Forecasting Stability (NASA B0005)
 | Horizon | AI-Only (LSTM) RMSE | Hybrid PINN RMSE | PINN Error Reduction |
@@ -125,7 +125,7 @@ python scripts/run_all_experiments.py
 
 ---
 
-## ?? 7. Deploying the REST API
+##  7. Deploying the REST API
 
 Launch the FastAPI inference engine:
 ```bash
@@ -145,7 +145,7 @@ Interactive OpenAPI documentation is available at `http://localhost:8000/docs`.
 
 ---
 
-## ?? 8. Interactive Digital Twin Dashboard
+##  8. Interactive Digital Twin Dashboard
 
 Launch the Streamlit Digital Twin application:
 ```bash
@@ -160,7 +160,7 @@ Open `http://localhost:8501` in your browser to interact with:
 
 ---
 
-## ?? 9. Running Automated Tests
+##  9. Running Automated Tests
 
 Run the complete test suite:
 ```bash
